@@ -65,7 +65,7 @@ class MainActivity : AppCompatActivity() {
                 +"      var onLoad = function() {"
                 +"          grecaptcha.render('recaptcha',"
                 +"           {"
-                +"               sitekey: '6LeUTakhAAAAAD7qDsrMSySky7YaUf4mKGEa8QcY',"
+                +"               sitekey: '$SITE_KEY',"
                 +"               size: 'invisible'"
                 +"           }"
                 +"          );"
@@ -85,7 +85,7 @@ class MainActivity : AppCompatActivity() {
         button.setOnClickListener { view ->
             progressBar.visibility = View.VISIBLE;
             Log.d("TOKEN", "sssss");
-            webView.loadDataWithBaseURL("https://www.google.com", html, "text/html", "UTF-8", "https://www.google.com/recaptcha/admin/site/565010968/settings");
+            webView.loadDataWithBaseURL("https://www.google.com", html, "text/html", "UTF-8", "https://www.google.com/recaptcha/admin/site/XXXXXXXX/settings");
         }
 
         webView.setWebViewClient(object : WebViewClient() {
